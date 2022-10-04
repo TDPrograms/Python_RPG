@@ -12,7 +12,8 @@ class Character():
         self.level = 0
         self.hit_p_max = 0
         self.movement = 0
-        self.armor = 0
+        self.armors = []
+        self.weapons = []
         self.xp = 0
         self.type = ""
         self.current_weapon = ""
