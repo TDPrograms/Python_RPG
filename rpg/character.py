@@ -1,6 +1,6 @@
 class Character():
     def __init__(self):
-        self.name = "player"
+        self.name = "Luna"
         self.strength = 0
         self.intel = 0
         self.wisdom = 0
@@ -19,7 +19,11 @@ class Character():
         self.current_weapon = ""
         self.current_armor = ""
 
-    
+    def load_from_json(self, path):
+        with open(path) as f:
+            c = json.load(f)
+        self.name = c.get("name")
+
     def set_current_weapon(self):
         pass
     
