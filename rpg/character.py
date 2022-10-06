@@ -1,3 +1,5 @@
+import json
+
 class Character():
     def __init__(self):
         self.name = "Luna"
@@ -23,6 +25,7 @@ class Character():
         with open(path) as f:
             c = json.load(f)
         self.name = c.get("name")
+        self.charisma = c.get("charisma")
 
     def set_current_weapon(self):
         pass
