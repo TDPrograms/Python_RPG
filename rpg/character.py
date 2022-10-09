@@ -26,6 +26,17 @@ class Character():
             c = json.load(f)
         self.name = c.get("name")
         self.charisma = c.get("charisma")
+        self.intel = c.get("intel")
+        self.wisdom = c.get("wisdom")
+        self.dexterity = c.get("dexterity")
+        self.constitution = c.get("constitution")
+        self.race = c.get("race")
+        self.p_class = c.get("p_class")
+        self.level = c.get("level")
+        self.hit_p_max = c.get("hit_p_max")
+        self.movement = c.get("movement")
+        self.xp = c.get("xp")
+
 
     def set_current_weapon(self):
         pass
